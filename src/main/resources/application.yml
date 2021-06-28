@@ -28,7 +28,7 @@ spring:
         trust: smtp.gmail.com
     protocol: smtp
     username: pbildirici4@gmail.com
-    password: bacs+8455
+    password: ??????
     host: smtp.gmail.com
     port: 587
     properties:
