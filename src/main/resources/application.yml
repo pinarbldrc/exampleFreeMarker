@@ -1,0 +1,49 @@
+server:
+  port: 8098
+
+spring:
+
+  datasource:
+    platform: postgresql
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/freeMarkerDataBase
+    username: postgres
+    password: admin
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+
+  mail:
+    test-connection: false
+    smtp:
+      ssl:
+        trust: smtp.gmail.com
+    protocol: smtp
+    username: pbildirici4@gmail.com
+    password: bacs+8455
+    host: smtp.gmail.com
+    port: 587
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: smtp.gmail.com
+          auth: true
+          starttls:
+            required: true
+            enable: true
+
+
+
+
+
+
+

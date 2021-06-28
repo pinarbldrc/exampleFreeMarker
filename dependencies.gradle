@@ -1,0 +1,50 @@
+ext{
+    versions = [
+            postgresql : "42.2.16",
+            lombok : "1.18.12",
+            swagger : "2.9.2" ,
+            mapstruct :"1.3.1.Final",
+            validation :"2.0.1.Final",
+            aspectOriented : "5.2.5.RELEASE",
+            freeMarker : "2.3.28",
+            mail : "2.4.4",
+            startFreeMarker: "2.4.5" ,
+            devtools: "2.4.0" ,
+
+
+
+
+
+    ]
+
+    libs = [
+            postgresql : "org.postgresql:postgresql:$versions.postgresql",
+            lombok : "org.projectlombok:lombok:$versions.lombok",
+            swagger : "io.springfox:springfox-swagger2:$versions.swagger",
+            swaggerui : "io.springfox:springfox-swagger-ui:$versions.swagger",
+            springJpa : "org.springframework.boot:spring-boot-starter-data-jpa",
+            springWeb : "org.springframework.boot:spring-boot-starter-web" ,
+            springValidation : "org.springframework.boot:spring-boot-starter-validation" ,
+            mapstruct         : "org.mapstruct:mapstruct:$versions.mapstruct",
+            mapstructProcessor: "org.mapstruct:mapstruct-processor:$versions.mapstruct",
+            validation: "javax.validation:validation-api:$versions.validation",
+            aspectOriented: "org.springframework:spring-aop:$versions.aspectOriented",
+            freeMarker: "org.freemarker:freemarker:$versions.freeMarker",
+            mail :"org.springframework.boot:spring-boot-starter-mail:$versions.mail",
+            startFreeMarker: "org.springframework.boot:spring-boot-starter-freemarker:$versions.startFreeMarker" ,
+            devtools: "org.springframework.boot:spring-boot-devtools:$versions.devtools" ,
+
+
+
+
+
+
+    ]
+
+
+
+
+
+
+
+}

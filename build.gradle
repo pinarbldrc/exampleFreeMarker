@@ -1,0 +1,57 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.7.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+group = 'com.patuli'
+version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility=JavaVersion.VERSION_11
+
+configurations {
+	developmentOnly
+	runtimeClasspath {
+		extendsFrom developmentOnly
+	}
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+apply from: "${rootDir}/dependencies.gradle"
+
+dependencies {
+	implementation libs.postgresql
+	compileOnly libs.lombok
+	annotationProcessor libs.lombok
+	implementation libs.swagger
+	implementation libs.swaggerui
+	implementation libs.springJpa
+	implementation libs.springWeb
+	implementation libs.mapstruct
+	implementation libs.validation
+	annotationProcessor libs.mapstructProcessor
+	implementation libs.springValidation
+	implementation libs.aspectOriented
+	implementation libs.freeMarker
+	implementation libs.mail
+	implementation libs.startFreeMarker
+	runtimeOnly libs.devtools
+
+
+
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}
