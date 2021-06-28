@@ -1,6 +1,6 @@
 # exampleFreeMarker
  Sending Email use FreeMarker Template Engine with SpringBoot
-This repository contains a Spring Boot application with FreeMarker.You will find sending Email and save to database(PostgreSQL)with uuid(Primary Key)
+This repository contains a Spring Boot application with FreeMarker.You will find sending Email and save to database(PostgreSQL)with uuid(Primary Key)<br>
 GET STARTED
 -----------------------------------------------------------------------
 1-Making the configuration settings(SwaggerUİ and FreeMarker)<br>
